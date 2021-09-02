@@ -1,5 +1,7 @@
 import React from 'react';
-
+import Todo from './components/Todo';
+import TodoList from './components/TodoList';
+import TodoForm from './components/TodoForm';
 
 const thingsTodo = [
   {
@@ -71,8 +73,16 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>Welcome to your Todo App!</h2>
+      <div className="App">
+        <div className="header">
+          <h1>Todo List</h1>
+          <TodoForm handleAdd={this.handleAdd} />
+        </div>
+        <TodoList
+          thingsTodo={this.state.thingsTodo}
+          handleToggle={this.handleToggle}
+          handleComplete={this.handleComplete}
+        />
       </div>
     );
   }
