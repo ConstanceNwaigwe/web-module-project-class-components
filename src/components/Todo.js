@@ -13,6 +13,6 @@ const Todo = (props) => {
           <p>{props.item.work}</p>
         </div>
       );
-}
+};
 
 export default Todo;
