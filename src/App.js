@@ -1,7 +1,7 @@
 import React from 'react';
-import Todo from './components/Todo';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
+import './components/Todo.css';
 
 const thingsTodo = [
   {
