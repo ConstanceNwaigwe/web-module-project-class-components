@@ -19,7 +19,7 @@ const TodoList = (props) => {
         />
       ))}
       <button className="clear-btn" onClick={handleClick}>
-        Clear Purchased
+        Clear Completed
       </button>
         </div>
     );
